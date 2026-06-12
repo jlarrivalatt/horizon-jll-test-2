@@ -9,3 +9,16 @@ Use this command to push dev to store
 Use this command to pull existing store data
 
 ``` shopify theme pull --store=jll-test-2 ```
+
+end session with ctrl + C
+
+add changes to the repo in github with git
+
+git status will show you the status of the code
+
+git add . will add all the changes to the commit
+
+git commit -m"this is a commit message" this a message about changes to the code
+
+git push origin *branch_name* this pushes the code to github
+
