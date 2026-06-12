@@ -1,0 +1,101 @@
+{% comment %} These are basic HTML elements {% endcomment %}
+
+{% comment %} <section>
+    This is a section tag
+
+    <div> Divs are dividers </div>
+    <div class="parent-div">
+        <div class="children">
+            Child 1
+        </div>
+        <div class="children">
+            Child 2
+        </div>
+    </div>
+
+    <h1> heading 1 </h1>
+    <h2> heading 2</h2>
+    <h3> heading 3 </h3>
+    <h4> heading 4</h4>
+    <h5> heading 5</h5>
+    <h6> heading 6 </h6>
+
+    <p> paragraph tag </p>
+
+    <ul>
+        <li> list item </li>
+        <li> list item 2 </li>
+    </ul>
+
+</section> {% endcomment %}
+
+
+{% comment %} These are section settings {% endcomment %}
+{% comment %} <div>
+  This is our setting header: {{ section.settings.header }}
+</div>
+
+<div style="font-size: {{ section.settings.font_size }}px;">
+  This the font size: {{ section.settings.font_size }}
+</div>
+
+{% if section.settings.show_announcement == true %}
+  <h1> This is an announcement </h1>
+{% endif %} {% endcomment %}
+
+{% comment %} These are styles (or CSS) {% endcomment %}
+
+<div class="parent__div"> name </div>
+
+<style>
+
+  .parent__div {
+    font-size: 34px;
+    color: {{ section.settings.heading_color }};
+    text-decoration: green wavy underline;
+    margin: 30px;
+    padding: 10px;
+    border: 1rem solid;
+  }
+
+</style>
+
+
+{% schema %}
+{
+  "name": "Hero 2",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 16
+    },
+    {
+      "type": "checkbox",
+      "id": "show_announcement",
+      "label": "Show announcement"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "placeholder": "Default"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero 2"
+    }
+  ]
+}
+{% endschema %}
