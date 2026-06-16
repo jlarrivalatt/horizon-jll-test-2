@@ -1,0 +1,57 @@
+
+<section>
+    {% if section.settings.heading != blank %}
+
+    <div>
+        {{ section.settings.heading }}
+    </div>
+    {% endif %}
+
+    {% if section.settings.paragraph != blank %}
+    <div>
+        {{ section.settings.paragraph }}
+    </div>
+    {% endif %}
+
+    {% if section.settings.image != blank %}
+    <div>
+        {{ section.settings.image | image_url: width: 1500 | image_tag }}
+    </div>
+    {% endif %}
+</section>
+
+{% schema %}
+{
+    "name": "text section",
+    "settings": [
+        {
+        "type": "header",
+        "content": "Text Content"
+        },
+        {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+        },
+        {
+        "type": "richtext",
+        "id": "paragraph",
+        "label": "Paragraph1"
+        },
+        {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+        }
+    
+    ],
+    "presets": [
+{ 
+"name": "text section"
+}
+
+    ]
+}
+
+
+{%  endschema %}
