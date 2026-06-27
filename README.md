@@ -22,3 +22,4 @@ git commit -m"this is a commit message" this a message about changes to the code
 
 git push origin *branch_name* this pushes the code to github
 
+git restore *the path of the file* this will restore the file 
