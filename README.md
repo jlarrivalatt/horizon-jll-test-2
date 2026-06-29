@@ -24,6 +24,8 @@ git push origin *branch_name* this pushes the code to github
 
 git restore *the path of the file* this will restore the file 
 
-git branch --list this will list all the branches you have
+git branch --list this will list all the branches you have. branch you are on will be asteriks green text
 
 git branch *branch name* this will make a branch called *branch name*
+
+git switch *branch name* this will switch you to *branch name*
