@@ -1,12 +1,39 @@
 
-
+{% comment %} 
+ All of the text should be enclosed by <body> tags. 
+ but we don't need to do this in shopify
+{% endcomment %}
 
 <p>
-    this is text
+    this is text.
 </p>
 <p>
-    this is also text
+    this is also text.
 </p>
+
+{%  comment %}
+  Headings are larger and bolder than other text
+  There are 6 different levels of headings
+{% endcomment %}
+
+<h1> This is a heading 1 </h1>
+{%  comment %}
+  Heading 1 should always be used for the heading of the overall page
+{% endcomment %}
+<h2> This is a heading 2 </h2>
+<h3> This is a heading 3 </h3>
+<h4> This is a heading 4 </h4>
+<h5> This is a heading 5 </h5>
+<h6> This is a heading 6 </h6>
+
+<strong> Strong element makes text bold and marks the text as important for tools like screen readers</strong>
+
+<p> You can make a single word or phrase <strong> bold</strong>.</p>
+
+<p> You can make a single word or phrase <em> italic</em>.</p>
+
+<!-- This is an html comment -->
+{% comment %} This is also an html comment {% endcomment %}
 
 
 {% schema %}

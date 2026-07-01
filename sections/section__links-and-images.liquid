@@ -1,0 +1,79 @@
+<p> Links allow us to link to pages on other websites and other pages on your own website</p>
+<p> We can also display an image on a webpage using HTML</p>
+
+<a>This is an anchor element</a>
+
+<p> An HTML attribute gives additional information to an HTML element and goes in the element's opening tag. It has two parts, a name and a value.</p>
+<p> A hypertext reference, href, attribute is where we put the link we want to go to.</p>
+<p> Links could be to </p>
+
+<ul>
+    <li>videos</li>
+    <li>pdf files</li>
+    <li>images</li>
+    <li>other HTML documents</li>
+</ul>
+
+<a href="https://www.theodinproject.com/about">About The Odin Project</a>
+
+<p> The target attribute specifies where the link should be opened.</p>
+<p> The default value for target is _self value, which open the link in the current tab.</p>
+<p> To open the link in a new tab or window, set target attribute value as _blank, target=_blank</p>
+
+<p> The attribute rel describes the relation between the current page and the linked document.</p>
+<p> rel=noopener prevents the new tab from accessing the original page</p>
+<p> rel=noreferrer is the same as noopener but also prevents certain details about the original page from being passed to the new page</p>
+
+<p>Absolute links are links to pages on other websites on the internet</p>
+<p>Absolute links will be made up of the following parts scheme://domain/path</p>
+
+<p>Relative links only include the file path to another page, relative to the page you are creating the link on.</p>
+<a href="./about.html"> About</a>
+<p>Adding ./ should make your code start looking for the file/directory relative to the current directory</p>
+<p>Adding ../ should make your code go one level out of the page's directory into its parent directory</p>
+
+
+
+<h2>Display an image in HTML</h2>
+
+
+<img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project Logo" height="310" width="310">
+
+<p> Img is a void element and does not a need a closing tag.</p>
+
+<p>Src, source, element can embed an image using both absolute and relative paths, similar to href. </p>
+
+<p>The alt, alternative text, attribute is used to describe an image, used in place of image if it cannot be loaded, or for screen readers.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% schema %}
+{
+  "name": "Links and Images",
+  "settings": [
+    
+  ],
+  "presets": [
+    {
+      "name": "Links and Images"
+    }
+  ]
+}
+{% endschema %}
