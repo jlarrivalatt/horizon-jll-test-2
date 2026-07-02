@@ -29,3 +29,5 @@ git branch --list this will list all the branches you have. branch you are on wi
 git branch *branch name* this will make a branch called *branch name*
 
 git switch *branch name* this will switch you to *branch name*
+
+git pull origin *branch name* this will pull the current code from that branch into your current branch. this is used for pulling changes from your remote repo to your local machine. 
